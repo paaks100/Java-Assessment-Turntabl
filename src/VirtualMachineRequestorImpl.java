@@ -3,10 +3,10 @@ import java.util.Map;
 
 public class VirtualMachineRequestorImpl implements VirtualMachineRequestor {
 
-    private AuthorisingService authorisingService;
-    private SystemBuildService systemBuildService;
+    private final AuthorisingService authorisingService;
+    private final SystemBuildService systemBuildService;
 
-    private Map<String, Map<String, Integer>> successfulBuilds = new HashMap<>();
+    private final Map<String, Map<String, Integer>> successfulBuilds = new HashMap<>();
     private int failedBuildsCount = 0;
 
     public VirtualMachineRequestorImpl(AuthorisingService authorisingService, SystemBuildService systemBuildService) {

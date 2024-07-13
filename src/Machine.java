@@ -1,9 +1,9 @@
 public abstract class Machine {
-    private String hostname;
-    private String requestor;
-    private int cpus;
-    private int ram;
-    private int diskSize;
+    private final String hostname;
+    private final String requestor;
+    private final int cpus;
+    private final int ram;
+    private final int diskSize;
 
     public Machine(String hostname, String requestor, int cpus, int ram, int diskSize) {
         this.hostname = hostname;

@@ -1,6 +1,6 @@
 public class DesktopMachine extends Machine {
-    private String windowsVersion;
-    private String buildNumber;
+    private final String windowsVersion;
+    private final String buildNumber;
 
     public DesktopMachine(String hostname, String requestor, int cpus, int ram, int diskSize, String windowsVersion, String buildNumber) {
         super(hostname, requestor, cpus, ram, diskSize);
